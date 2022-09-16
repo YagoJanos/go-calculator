@@ -9,7 +9,7 @@ import io.gatling.jdbc.Predef._
 class APITest extends Simulation {
 
   val httpProtocol = http
-    .baseUrl("http://localhost:8080")
+    .baseUrl("http://localhost:8081")
 
   val scn = scenario("APITest")
     .exec(
