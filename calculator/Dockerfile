@@ -12,6 +12,6 @@ COPY ./*.go ./
 
 RUN go mod tidy && go build -o ./calc
 
-EXPOSE 8080
+EXPOSE 8081
 
 ENTRYPOINT /etc/init.d/collectd start && /app/calc
